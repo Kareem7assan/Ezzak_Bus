@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.bus.LinesActivity">
+<include
+    layout="@layout/toolbar_bus"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/between_cities_bh"
+        android:padding="@dimen/padding_med"
+        android:layout_margin="@dimen/margin_large"
+        >
+        <TextView
+            android:id="@+id/src"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize3"
+            />
+        <TextView
+            android:id="@+id/point_src"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_small"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:text="@string/point_sep"
+            android:textSize="@dimen/textsize3"
+            />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_large"
+            android:background="@drawable/dot_gray"
+            />
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_gravity="center"
+            />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_small"
+            android:background="@drawable/dot_stoke"
+            />
+        <TextView
+            android:id="@+id/dist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize3"
+            />
+        <TextView
+            android:id="@+id/point_dist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_small"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:text="@string/point_sep"
+            android:textSize="@dimen/textsize3"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rec_lines"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_large"
+
+    />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

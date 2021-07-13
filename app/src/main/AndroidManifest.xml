@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aait.ezakbus">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="false"
+        android:allowClearUserData="true"
+        android:icon="@mipmap/ic_launcher_"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="allowBackup, label">
+        <activity android:name=".ui.activities.settings.ActivationPhone"></activity>
+        <activity android:name=".ui.activities.settings.ChangePhoneActivity" />
+        <activity android:name=".ui.activities.bus.BusMenuActivity" />
+        <activity android:name=".ui.activities.bus.TicketActivity" />
+        <activity android:name=".ui.activities.bus.BookingDetailsActivity" />
+        <activity android:name=".ui.activities.bus.BookingMessageActivity" />
+        <activity android:name=".ui.activities.bus.ReserveBusActivity" />
+        <activity android:name=".ui.activities.bus.LinesActivity" />
+        <activity android:name=".ui.activities.bus.BusLinesActivity" />
+        <activity android:name=".ui.activities.core.TrackingActivity" />
+        <activity android:name=".ui.activities.settings.EditSettingsActivity" />
+        <activity android:name=".ui.activities.settings.MySettingsActivity" />
+        <activity android:name=".ui.activities.menu.MyChargeActivity" />
+        <activity android:name=".ui.activities.notifications.NotificationDetailsActivity" />
+        <activity android:name=".ui.activities.notifications.NotificationsActivity" />
+        <activity android:name=".ui.activities.menu.MyRidesActivity" />
+        <activity android:name=".ui.activities.settings.ContactUsActivity" />
+        <activity android:name=".ui.activities.core.MapPreviewActivity" />
+        <activity android:name=".ui.activities.menu.TransferChargeActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@string/fb_login_protocol_scheme"
+                    tools:ignore="ManifestResource" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.menu.ChargeWaysActivity" />
+        <activity android:name=".ui.activities.auth.RegisterActivity" />
+        <activity android:name=".ui.activities.settings.TermsActivity" />
+        <activity android:name=".ui.activities.menu.ShareActivity" />
+        <activity android:name=".ui.activities.map.SearchPlacesActivity" />
+        <activity android:name=".ui.activities.map.AddressDetailsActivity" />
+        <activity android:name=".ui.activities.core.DetailsActivity" />
+        <activity android:name=".ui.fragments.trips.TripDetailsActivity" />
+        <activity android:name=".ui.activities.menu.ChargePhoneActivity" />
+        <activity android:name=".ui.activities.menu.TransSuccessActivity" />
+
+        <service android:name=".fcm.MessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".utils.LocationAddress"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDFwiRBrtHdnSq5a4HW-0IDa1-tPrtCoyk" />
+    </application>
+
+</manifest>

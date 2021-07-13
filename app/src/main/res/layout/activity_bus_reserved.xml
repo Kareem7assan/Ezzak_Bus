@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+<LinearLayout
+    android:id="@+id/mark_lay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="@dimen/margin_2xlarge"
+    >
+    <ImageView
+        android:id="@+id/marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/marker"
+
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reserved_success"
+        android:textStyle="bold"
+        android:fontFamily="@font/jf_flat_bold"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textsize1"
+        android:layout_gravity="center"
+        android:layout_below="@id/marker"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/mark_lay"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="1dp"
+            />
+    <include
+        layout="@layout/item_adapter_details_no_seperator"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="1dp"
+            />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/prev_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/white"
+        app:strokeWidth="1dp"
+        android:text="@string/prev_booking_details"
+        android:textColor="@color/colorAccent"
+        app:strokeColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/margin_large"
+        />
+</RelativeLayout>

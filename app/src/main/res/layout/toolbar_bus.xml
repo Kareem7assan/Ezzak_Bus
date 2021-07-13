@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+
+            >
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+                android:padding="@dimen/padding_med"
+                android:src="@drawable/arrow"
+                android:rotation="-270"
+                android:tint="@android:color/white"
+                android:layout_centerVertical="true"
+
+                />
+            <TextView
+                android:id="@+id/title_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize1"
+                android:fontFamily="@font/jf_flat_semi"
+                android:layout_toRightOf="@id/iv_back"
+                android:text="@string/bus_lines"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_centerVertical="true"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/spinner_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@drawable/spinner_bg"
+                android:padding="@dimen/margin_small"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:gravity="center"
+                    />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:padding="@dimen/padding_med"
+                    android:src="@drawable/arrow"
+                />
+
+                com.nex3z.notificationbadge.NotificationBadge
+                android:id="@+id/badge"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:textSize="11dp"
+                android:layout_alignParentTop="true"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginRight="14dp"
+
+                />
+
+                ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/img_notif"
+                    android:padding="@dimen/padding_med"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="fitXY"
+    android:src="@mipmap/header"
+    android:visibility="gone"
+    />
+</LinearLayout>

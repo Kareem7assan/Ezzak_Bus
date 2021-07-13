@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "129368207484",
+    "firebase_url": "https://ezzak-255109.firebaseio.com",
+    "project_id": "ezzak-255109",
+    "storage_bucket": "ezzak-255109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129368207484:android:b08dda0e86765bc2df59f9",
+        "android_client_info": {
+          "package_name": "com.aait.ezakbus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129368207484-qmmtrh76vhnn9ik05c3k1oebbdd16pjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEOEem1k1kw_bZAqJQr8LnKFuzuzAl1A4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129368207484-qmmtrh76vhnn9ik05c3k1oebbdd16pjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

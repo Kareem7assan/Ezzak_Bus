@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:rippleColor="@android:color/white">
+<androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize2"
+        android:fontFamily="@font/jf_flat_semi"
+        android:padding="@dimen/padding_med"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+/>
+</androidx.appcompat.widget.LinearLayoutCompat>

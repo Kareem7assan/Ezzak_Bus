@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_data">add data</string>
+    <string name="payment">payment</string>
+    <string name="done_project">add project</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_data">إضافة بيانات</string>
+    <string name="payment">الدفع</string>
+    <string name="done_project">اضافة المشروع</string>
+</resources>

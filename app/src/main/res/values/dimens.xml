@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="cardview_elev">4dp</dimen>
+    <dimen name="padding_med">8dp</dimen>
+    <dimen name="margin_2xlarge">64dp</dimen>
+    <dimen name="textSmall">8dp</dimen>
+    <dimen name="textsize3">12dp</dimen>
+    <dimen name="textsize2">14dp</dimen>
+    <dimen name="textsize1">16dp</dimen>
+    <dimen name="textsize">18dp</dimen>
+    <dimen name="padding_ab_med">12dp</dimen>
+    <dimen name="switch_track_width">10dp</dimen>
+    <dimen name="switch_track_height">18dp</dimen>
+    <dimen name="switch_radius">10dp</dimen>
+    <dimen name="switch_selector_padding">2dp</dimen>
+    <dimen name="switch_stroke_height">0dp</dimen>
+    <dimen name="avatar_img">64dp</dimen>
+    <dimen name="img_store">72dp</dimen>
+    <dimen name="avatar_img_nav">84dp</dimen>
+    <dimen name="textsize4">10dp</dimen>
+    <dimen name="margin_address">28dp</dimen>
+    <dimen name="shop_height">150dp</dimen>
+    <dimen name="item_circle_img">64dp</dimen>
+    <dimen name="sendWidth">36dp</dimen>
+    <dimen name="sendHeigh">36dp</dimen>
+</resources>

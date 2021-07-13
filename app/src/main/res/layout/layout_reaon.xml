@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_small"
+            >
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_reason"
+            android:fontFamily="@font/jf_flat_bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize1"
+            android:layout_margin="@dimen/margin_large"
+            />
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_reasons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            />
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirm_btn_"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:fontFamily="@font/jf_flat_semi"
+            android:layout_margin="@dimen/margin_large"
+            app:cornerRadius="@dimen/margin_large"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

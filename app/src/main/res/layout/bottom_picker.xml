@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/date_time"
+        android:fontFamily="@font/jf_flat_semi"
+        android:textSize="@dimen/textsize2"
+        android:layout_margin="@dimen/margin_large"
+        />
+<EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/time"
+        android:fontFamily="@font/jf_flat_semi"
+        android:textSize="@dimen/textsize2"
+            android:layout_margin="@dimen/margin_large"
+            />
+
+    <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/notes"
+            android:padding="@dimen/padding_med"
+            android:textSize="@dimen/textsize2"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:minLines="4"
+            android:gravity="top"
+            android:fontFamily="@font/jf_flat_semi"
+            android:background="@drawable/boarder"
+            android:inputType="textMultiLine"
+            />
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/next_btn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/next"
+            android:fontFamily="@font/jf_flat_semi"
+            />
+</LinearLayout>

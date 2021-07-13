@@ -1,0 +1,122 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/main_lay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgEmptyBase"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/empty_box"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgEmptyBase"
+                android:layout_centerHorizontal="true"
+                android:text="@string/no_item"
+                android:fontFamily="@font/jf_flat_bold"
+                android:textSize="@dimen/textsize2"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lay_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone"
+
+            >
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:id="@+id/progress_wheel"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:matProg_barColor="@color/colorAccent"
+                app:matProg_barWidth="4dp"
+
+                app:matProg_progressIndeterminate="true" />
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                android:layout_width="50dp"
+            android:layout_height="50dp"
+            style="@style/AVLoadingIndicatorView"
+                android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:indicatorName="BallPulseIndicator"
+            app:indicatorColor="@color/colorAccent"
+            />
+        </RelativeLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+        <RelativeLayout
+            android:id="@+id/lay_no_internet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/imgNoConnBase"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/no_connection"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/msg_conn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgNoConnBase"
+                android:layout_centerHorizontal="true"
+                android:text="@string/error_connection"
+                android:textSize="20dp"
+                />
+
+
+            <Button
+                android:id="@+id/rel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg_conn"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:text="@string/reload"
+                />
+        </RelativeLayout>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
